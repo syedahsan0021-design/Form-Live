@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-card">
+      <h1>Registration Form</h1>
+      <p class="subtitle">Fill out the form carefully for registration</p>
+
+      <form id="registrationForm">
+        <div class="row">
+          <div class="field">
+            <label>Student Name</label>
+            <input type="text" placeholder="First Name" required>
+          </div>
+          <div class="field">
+            <label>&nbsp;</label>
+            <input type="text" placeholder="Last Name" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Gender</label>
+            <select required>
+              <option value="">Please Select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Student E-mail</label>
+            <input type="email" placeholder="ex: myname@example.com" required>
+           
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Student ID</label>
+            <input type="text" required>
+          </div>
+
+          <div class="field">
+            <label>List of Classes</label>
+            <select required>
+              <option value="">Please Select</option>
+              <option>Math</option>
+              <option>Science</option>
+              <option>Computer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +92 300 1234567" required>
+          </div>
+          <div class="field">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="guardian">Guardian Name</label>
+            <input type="text" id="guardian" name="guardian" placeholder="Guardian Full Name" required>
+          </div>
+          <div class="field">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Permanent Address" required>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
